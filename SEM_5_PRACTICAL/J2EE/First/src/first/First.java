@@ -22,8 +22,8 @@ public class First {
  /*static insert data
             String query="Insert into emp(empno,empnm,designation,city,salary,department)values(2,'Mihir','FullStack_Developer','Ahemdabad',750000,'CE')";*/
  
- //Dynamic Insert Data
-           /*System.out.print("Enter Emp no :");
+           //(1)  Write a program to insert a record of an employee into the emp table. (Dynamic Insert Data)
+          /* System.out.print("Enter Emp no :");
            int empno = sc.nextInt();
            sc.nextLine();
            
@@ -45,44 +45,51 @@ public class First {
            
            String query="Insert into emp values("+empno+",'"+empnm+"','"+designation+"','"+city+"','"+salary+"','"+department+"')";*/
  
- /*select data
-            ResultSet rs = st.executeQuery("SELECT * FROM emp");
+            //(2)  Write a program to display all the records of employees. (select data)
+            /*ResultSet rs = st.executeQuery("SELECT * FROM emp");
             
             while (rs.next()) {
             System.out.println(rs.getInt("empno") + ", " + rs.getString("empnm") + ", " + rs.getString("designation") + ", " + rs.getString("city") + ", " + rs.getDouble("salary") + ", " + rs.getString("department"));
              }*/
             
             
+            //(3)  Write a program to display employees whose salary is greater than 50000.
             /*ResultSet rs = st.executeQuery("SELECT * FROM emp WHERE salary > 50000");
             while (rs.next()) {
                 System.out.println(rs.getInt("empno") + ", " + rs.getString("empnm") + ", " + rs.getDouble("salary"));
             }*/
             
+            //(4)  Write a JDBC program to display employees who are from the city 'Rajkot'. 
             /*ResultSet rs = st.executeQuery("SELECT * FROM emp WHERE city = 'Rajkot'");
             while (rs.next()) {
             System.out.println(rs.getInt("empno") + ", " + rs.getString("empnm") + ", " + rs.getString("city"));
             }*/
             
+            //(5)  Write a program to display employees whose name starts with 'A'.
             /*ResultSet rs = st.executeQuery("SELECT * FROM emp WHERE empnm LIKE 'A%'");
             while (rs.next()) {
             System.out.println(rs.getInt("empno") + ", " + rs.getString("empnm"));
             }*/
             
+            //(6)  Write a program to display employees whose designation is manager. 
             /*ResultSet rs = st.executeQuery("SELECT * FROM emp WHERE designation = 'Manager'");
             while (rs.next()) {
             System.out.println(rs.getInt("empno") + ", " + rs.getString("empnm") + ", " + rs.getString("designation"));
             }*/
             
+            //(7)  Write a program to count the number of employees in the table. 
             /*ResultSet rs = st.executeQuery("SELECT COUNT(*) FROM emp");
             if (rs.next()) {
             System.out.println("Total Employees: " + rs.getInt(1));
             }*/
             
+            //(8)  Write a program to display the employee with the highest salary.
             /*ResultSet rs = st.executeQuery("SELECT * FROM emp ORDER BY salary DESC LIMIT 1");
             if (rs.next()) {
             System.out.println("Highest Paid Employee: " + rs.getString("empnm") + " : " + rs.getDouble("salary"));
             }*/
             
+            //(9)  Write a program to sort employee records by empnm. 
             /*ResultSet rs = st.executeQuery("SELECT * FROM emp ORDER BY empnm ASC");
             while (rs.next()) {
             System.out.println(rs.getInt("empno") + ", " + rs.getString("empnm"));
