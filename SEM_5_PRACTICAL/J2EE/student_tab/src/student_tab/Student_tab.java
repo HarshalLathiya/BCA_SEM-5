@@ -43,7 +43,7 @@ public class Student_tab {
             pst.setString(4, course);
             pst.setInt(5, sem);
 
-            pst.executeUpdate();*/
+            pst.executeUpdate(); */
             
             /*String query ="UPDATE stud SET Firstname = ?,lastname = ? where rollno = ?";
             
@@ -72,7 +72,7 @@ public class Student_tab {
                 System.out.println("No record found.");
              }*/
             
-            /*String query = "DELETE FROM stud WHERE rollno = ?";
+            String query = "DELETE FROM stud WHERE rollno = ?";
             PreparedStatement pst = con.prepareStatement(query);
             
             System.out.print("Enter Roll_Number to Delete :");
@@ -87,7 +87,7 @@ public class Student_tab {
             else
             {
                 System.out.println("No Record found.!");
-            }*/
+            }
             
             System.out.println("successfully.");
 
