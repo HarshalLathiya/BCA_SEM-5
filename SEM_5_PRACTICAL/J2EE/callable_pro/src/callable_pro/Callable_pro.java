@@ -1,6 +1,6 @@
 package callable_pro;
 import java.sql.*;
-//
+
 //public class Callable_pro {
 //
 //    public static void main(String[] args) {
@@ -69,57 +69,57 @@ import java.sql.*;
 //    }
 //}
     //Program 17
-//    public class Callable_pro {
-//    public static void main(String[] args) {
-//        try
-//        {
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/harshal_jee", "root", "");
-//            System.out.println("Database is connected!");
-//            CallableStatement cs = con.prepareCall("{call get_designation(?, ?)}");
-//            cs.setInt(1, 1); 
-//            cs.registerOutParameter(2, Types.VARCHAR);
-//            cs.executeQuery();
-//            System.out.println("Designation: " + cs.getString(2));
-//         }catch (Exception e) {
-//           System.out.println("Database is not connected!");
-//           System.out.println("Error: " + e.getMessage());
-//        }
-//    }
-//}
-
-import java.util.Scanner;
-
-public class Callable_pro {
+    public class Callable_pro {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        try {
+        try
+        {
             Class.forName("com.mysql.cj.jdbc.Driver");
-
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/harshal_jee", "root", "");
             System.out.println("Database is connected!");
-
-            System.out.print("Enter designation: ");
-            String desig = sc.nextLine();
-
-            CallableStatement cs = con.prepareCall("{call get_emps_by_designation(?)}");
-            cs.setString(1, desig);
-
-            ResultSet rs = cs.executeQuery();
-            while (rs.next()) {
-                System.out.println(
-                    "EmpNo: " + rs.getInt("empno") +
-                    ", Name: " + rs.getString("empnm") +
-                    ", Designation: " + rs.getString("designation") +
-                    ", City: " + rs.getString("city") +
-                    ", Salary: " + rs.getDouble("salary") +
-                    ", Department: " + rs.getString("department")
-                );
-            }
-        } catch (Exception e) {
-            System.out.println("Database is not connected!");
-            System.out.println("Error: " + e.getMessage());
+            CallableStatement cs = con.prepareCall("{call get_designation(?, ?)}");
+            cs.setInt(1, 1); 
+            cs.registerOutParameter(2, Types.VARCHAR);
+            cs.executeQuery();
+            System.out.println("Designation: " + cs.getString(2));
+         }catch (Exception e) {
+           System.out.println("Database is not connected!");
+           System.out.println("Error: " + e.getMessage());
         }
     }
 }
+
+//import java.util.Scanner;
+//
+//public class Callable_pro {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        
+//        try {
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//
+//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/harshal_jee", "root", "");
+//            System.out.println("Database is connected!");
+//
+//            System.out.print("Enter designation: ");
+//            String desig = sc.nextLine();
+//
+//            CallableStatement cs = con.prepareCall("{call get_emps_by_designation(?)}");
+//            cs.setString(1, desig);
+//
+//            ResultSet rs = cs.executeQuery();
+//            while (rs.next()) {
+//                System.out.println(
+//                    "EmpNo: " + rs.getInt("empno") +
+//                    ", Name: " + rs.getString("empnm") +
+//                    ", Designation: " + rs.getString("designation") +
+//                    ", City: " + rs.getString("city") +
+//                    ", Salary: " + rs.getDouble("salary") +
+//                    ", Department: " + rs.getString("department")
+//                );
+//            }
+//        } catch (Exception e) {
+//            System.out.println("Database is not connected!");
+//            System.out.println("Error: " + e.getMessage());
+//        }
+//    }
+//}
