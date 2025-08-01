@@ -1,5 +1,3 @@
-#write a python code to demonstrate operation of list 
-
 # Creating a list
 my_list = ["Harshal", "BCA", "Freelancer", "HTML", "CSS"]
 print("Original List:", my_list)
