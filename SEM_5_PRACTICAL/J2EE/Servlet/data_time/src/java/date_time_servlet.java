@@ -17,7 +17,7 @@ public class date_time_servlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         String formattedNow = now.format(formatter);
         
         try (PrintWriter out = response.getWriter()) {

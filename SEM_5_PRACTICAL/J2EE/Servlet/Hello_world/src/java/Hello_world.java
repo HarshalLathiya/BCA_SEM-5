@@ -1,9 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 
 public class Hello_world extends HttpServlet {
 
@@ -17,7 +15,7 @@ public class Hello_world extends HttpServlet {
             out.println("<title>Servlet Hello_world</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Hello_world at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Hello World From Servlet</h1>");
             out.println("</body>");
             out.println("</html>");
         }
