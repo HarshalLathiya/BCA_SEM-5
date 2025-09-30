@@ -29,7 +29,7 @@ public class colorapply extends HttpServlet {
                     }
                 }
             }
-            out.println("<meta http-equiv='refresh' content='1'>");
+            //out.println("<meta http-equiv='refresh' content='1'>");
             out.println("<html><body style='background-color:" + color + ";'>");
             out.println("<h2>selected background color is: " + color + "</h2>");
             out.println("<a href='ColorForm'>Go Back</a>");
