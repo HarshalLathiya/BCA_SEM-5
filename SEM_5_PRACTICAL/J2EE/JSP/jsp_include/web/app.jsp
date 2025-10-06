@@ -1,9 +1,9 @@
 
 <jsp:include page="header.jsp" />
-
-<main style="padding: 20px;">
-    <h2>Main Content</h2>
-     <img src="images/JSP.jpg" alt="What is JSP" width="200" />
-</main>
+<center>
+    <main style="padding: 20px;" >
+        <img src="images/JSP.jpg" alt="What is JSP" width="200" />
+    </main>
+</center>
 
 <jsp:include page="footer.jsp" />

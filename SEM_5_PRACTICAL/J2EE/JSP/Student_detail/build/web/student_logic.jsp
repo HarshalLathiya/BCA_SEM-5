@@ -6,10 +6,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%String rollno = request.getParameter("Student_Rollno"); %>
-        <%String name = request.getParameter("Student_Name"); %>
-        <%String course = request.getParameter("Student_Course"); %>
-        <%String sem = request.getParameter("Student_Semester");%>
+        <%String rollno = request.getParameter("Student_Rollno"); 
+        String name = request.getParameter("Student_Name"); 
+        String course = request.getParameter("Student_Course");
+        String sem = request.getParameter("Student_Semester");%>
         <table border='1' cellpadding='10'>
             <tr>
                 <th>Student Roll Number</th>
