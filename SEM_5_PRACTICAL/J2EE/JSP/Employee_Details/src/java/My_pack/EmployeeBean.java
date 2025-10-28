@@ -6,7 +6,6 @@ public class EmployeeBean {
     private String designation;
     private double salary;
 
-    // Getter and Setter for Name
     public String getName() {
         return name;
     }
@@ -14,7 +13,6 @@ public class EmployeeBean {
         this.name = name;
     }
 
-    // Getter and Setter for Designation
     public String getDesignation() {
         return designation;
     }
@@ -22,7 +20,6 @@ public class EmployeeBean {
         this.designation = designation;
     }
 
-    // Getter and Setter for Salary
     public double getSalary() {
         return salary;
     }
