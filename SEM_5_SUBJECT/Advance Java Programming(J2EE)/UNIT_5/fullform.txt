@@ -1,0 +1,15 @@
+JDO Java Data Objects
+POJO Plain Old Java Object
+POJI Plain Old Java Interface
+JTA Java Transaction API
+AOP Aspect-Oriented Programming
+REST Representational State Transfer
+SOAP Simple Object Access Protocol
+RMI Remote Method Invocation
+JMX Java Management Extensions
+DAO Data Access Object
+IOC Inversion of Control
+DI Dependency Injection
+STS Spring Tool Suite
+OXM Object XML Mapping
+JPA Java Persistance API
